@@ -75,6 +75,15 @@
     border-radius: 20px;
     color: white;
     padding: 10px;
+    cursor: pointer;
+    border: #B65DF3 2px solid;
+}
+.categories p:hover{
+    transition: 1s;
+    background-color: transparent;
+    color: black;
+    border: #B65DF3 2px solid;
+
 }
 .sale-image img{
     width: 100%;
@@ -148,7 +157,21 @@
     position: absolute;
     bottom: 300px;
     left: 200px;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
 
+}
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 .sale-image__offer h2{
     margin: 20px;
